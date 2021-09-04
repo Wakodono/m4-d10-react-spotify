@@ -1,0 +1,6 @@
+.player__wrapper {
+    width: 100%vw;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+}

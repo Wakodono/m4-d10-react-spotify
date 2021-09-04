@@ -1,14 +1,15 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Player from './components/Player';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+import './views/HomePage/HomePage'
+import Player from './components/player/Player';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <Player />
-      </header>
-    </div>
+    <Router>
+      <Route path exact="/" component={HomePage} />
+      <Route path="/" component={Player} />
+    </Router>
   );
 }
 
