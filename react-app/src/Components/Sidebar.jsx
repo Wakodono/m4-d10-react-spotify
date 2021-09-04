@@ -7,7 +7,7 @@ export default class Sidebar extends Component {
             <div class="position-sticky pt-3 side-navigation"> 
             <div className="spotifyLogo">
               <a class="nav-link text-secondary" href="#">
-                <img src="/..assets/Spotify_Logo_RGB_White.png" alt="Spotify logo">
+                <img src="/..assets/Spotify_Logo_RGB_White.png" alt="Spotify logo"/>
               </a>
             </div>
             <div className="nav-list">
@@ -16,8 +16,8 @@ export default class Sidebar extends Component {
               <li><a class="nav-link" href="#"><i class="bi bi-collection"></i> Your Library</a></li>
             </div>
             <div id="playlistLikes">
-                <button type="button" class="playlistLikes-item"><a class=" href=" #"=""><i class="bi bi-plus-square"></i> Create Playlist</a></button>
-                <button type="button" class="playlistLikes-item"><a class=" href=" #"=""><img src="/assets/likedsidebaricon.jpeg" alt="Liked songs icon">Liked Songs</a></button>
+                <Button type="button" className="playlistLikes-item"><a class=" href=" #"=""><i class="bi bi-plus-square"></i> Create Playlist</a></Button>
+                <Button type="button" class="playlistLikes-item"><a class=" href=" #"=""><img src="/assets/likedsidebaricon.jpeg" alt="Liked songs icon">Liked Songs</a></Button>
               
               <div class="sidebarDivider"></div>
                 <div class="sidebarTracks">
