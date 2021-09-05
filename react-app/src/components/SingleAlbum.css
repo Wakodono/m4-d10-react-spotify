@@ -1,6 +1,6 @@
 img {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     /* if image is not perfectly square these rules will make it so  */
 }
