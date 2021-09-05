@@ -3,10 +3,28 @@
     height: fit-content;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
 }
 
 .title-and-artist {
     display: flex;
     flex-direction: column;
+    color: white;
+    width: 100%;
+}
+
+span:first-of-type {
+    font-weight: bold;
+}
+.duration {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+svg {
     color: white;
 }

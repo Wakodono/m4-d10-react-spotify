@@ -13,8 +13,12 @@ export default function AlbumPage(props) {
 
     return (
         <div className="album__wrapper">
-            <h2>{album.title}</h2>
+            <div className="album__info">
+                <h2>{album.title}</h2>
+            </div>
+            <div className="album__tracks">
             {album && tracks && tracks.data.map(() => <SingleSong title={tracks.title} arist={tracks.artist.name} duration={tracks.duration / 60}/>)}
+            </div>
         </div>
     )
 }

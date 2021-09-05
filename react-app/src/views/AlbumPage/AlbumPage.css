@@ -10,4 +10,20 @@
     rgba(29, 29, 29, 1) 0%,
     rgba(3, 3, 3, 1) 100%
   );
+  display: flex;
+  flex-direction: row;
+}
+
+.album__info {
+    width: 40%;
+}
+
+.album__tracks {
+    width: 60%;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
