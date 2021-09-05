@@ -1,0 +1,13 @@
+.home__wrapper {
+  width: calc(100vw - 200px);
+  height: calc(100vh - 100px);
+
+  position: absolute;
+  left: 200px;
+  background: rgb(36, 68, 106);
+  background: linear-gradient(
+    137deg,
+    rgba(36, 68, 106, 1) 0%,
+    rgba(4, 7, 10, 1) 100%
+  );
+}
