@@ -1,0 +1,12 @@
+.single__wrapper {
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.title-and-artist {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
