@@ -9,10 +9,10 @@ import AlbumPage from './views/Albumpage/AlbumPage';
 function App() {
   return (
     <Router>
-      <Route exact path ='/' component={HomePage} />
+      <Route path ='/' exact component={HomePage} />
       <Route path='/' component={Player} />
       <Route path='/' component={Sidebar} />
-      <Route exact path="/album/album:id" component={AlbumPage} />
+      <Route path="/album/album:id" exact component={AlbumPage} />
     </Router>
   );
 }

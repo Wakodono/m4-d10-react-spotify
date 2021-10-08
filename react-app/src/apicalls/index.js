@@ -4,7 +4,7 @@ export const fetchMusic = async(query) => {
     return music.data
 }
 
-export const fetchAlbum = async(query) => {
+export const fetchAlbum = async(id) => {
     let response = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/${id}`)
     let album = await response.json()
     return album
