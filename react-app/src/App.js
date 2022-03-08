@@ -1,18 +1,24 @@
+import { useState } from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
-import Player from './components/player/Player';
-import Sidebar from './components/sidebar/Sidebar';
-import HomePage from './views/Homepage/HomePage';
-import AlbumPage from './views/Albumpage/AlbumPage';
+import Player from './components/Player/Player.jsx';
+import Sidebar from './components/Sidebar/Sidebar.jsx';
+import AlbumPage from './views/Albumpage/AlbumPage.jsx';
+import ArtistPage from './views/ArtistPage/ArtistPage.jsx';
+import Homepage from './views/Homepage/Homepage.jsx';
 
-function App() {
+const App = () => {
+const [playing, setPlaying] = useState({})
+  const handlePlaying = (track) => {
+    setPlaying(track)
+  }
   return (
     <Router>
-      <Route path ='/' exact component={HomePage} />
-      <Route path='/' component={Player} />
+      <Route path='/' exact component={Homepage}/>
+      <Route path='/' render={()=> <Player song={{title: playing?.title, artist: playing?.artist?.name, demo: playing?.preview, cover: playing?.cover }}/>} />
       <Route path='/' component={Sidebar} />
-      <Route path="/album/album:id" exact component={AlbumPage} />
+      <Route path="/album/:id" exact render={(props)=> <AlbumPage {...props} passSong={handlePlaying}/>} />
+      <Route path='/artist/:id' exact component={ArtistPage} />
     </Router>
   );
 }
