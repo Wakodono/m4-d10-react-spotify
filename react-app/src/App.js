@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
-import Player from './components/Player/Player.jsx';
-import Sidebar from './components/Sidebar/Sidebar.jsx';
+import Player from './components/player/Player.jsx'
+import Sidebar from './components/sidebar/Sidebar.jsx';
 import AlbumPage from './views/Albumpage/AlbumPage.jsx';
-import ArtistPage from './views/ArtistPage/ArtistPage.jsx';
-import Homepage from './views/Homepage/Homepage.jsx';
+import Homepage from './views/Homepage/HomePage.jsx';
+import ArtistPage from './views/Artistpage/ArtistPage.jsx'
 
 const App = () => {
 const [playing, setPlaying] = useState({})
