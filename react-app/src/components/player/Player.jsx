@@ -1,11 +1,12 @@
-import "./Player.css";
-import { BiPlay,BiPause } from "react-icons/bi";
-import { IoIosSkipForward, IoIosSkipBackward } from "react-icons/io";
-import { AiOutlineHeart, AiOutlineFullscreen } from "react-icons/ai";
-import {MdDevices} from "react-icons/md"
-import {CgPlayList} from "react-icons/cg"
-import {ImVolumeMedium} from "react-icons/im"
 import { useState } from "react";
+import { AiOutlineFullscreen, AiOutlineHeart } from "react-icons/ai";
+import { BiPause, BiPlay } from "react-icons/bi";
+import { CgPlayList } from "react-icons/cg";
+import { ImVolumeMedium } from "react-icons/im";
+import { IoIosSkipBackward, IoIosSkipForward } from "react-icons/io";
+import { MdDevices } from "react-icons/md";
+import "./Player.css";
+
 const Player = (props) => {
   const [play, setPlay] = useState(false)
   const handlePlay = () => {
