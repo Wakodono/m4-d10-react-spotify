@@ -1,16 +1,20 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import Player from './components/Player/Player.jsx';
 import Sidebar from './components/Sidebar/Sidebar.jsx';
+
 import AlbumPage from './views/Albumpage/AlbumPage.jsx';
 import ArtistPage from './views/Artistpage/ArtistPage.jsx';
 import Homepage from './views/Homepage/HomePage.jsx';
 
 const App = () => {
 const [playing, setPlaying] = useState({})
+
   const handlePlaying = (track) => {
     setPlaying(track)
   }
+
   return (
     <Router>
       <Route path='/' exact component={Homepage}/>

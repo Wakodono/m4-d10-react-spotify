@@ -27,9 +27,23 @@ const ArtistPage = (props) => {
                 </div>
             </div>
             <h2>Albums</h2>
+            <div className="artist__line">
+                {
+                    artist?.album?.map((album) => (
+                        <SingleAlbum src={album.cover_medium} key={album.id} />
+                    ))
+                }
+            </div>
+            <h2>Top Tracks</h2>
+            <div className="artist__tracks">
+                {
+                    artist?.tracklist?.map((song) => (
+                        <SingleSong title={song.title} artist={song.artist.name} duration={song.duration / 60} /> 
+                    ))
+                }
+            </div>
         </div>
     )
 }
 
 export default ArtistPage
-
