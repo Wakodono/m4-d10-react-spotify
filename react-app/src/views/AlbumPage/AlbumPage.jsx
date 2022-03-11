@@ -1,19 +1,22 @@
 import { useEffect, useState } from "react";
-import { Button } from "react-bootstrap";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsThreeDots } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 import { fetchAlbum } from "../../apicalls";
-import SingleAlbum from "../../components/SingleAlbum/SingleAlbum.jsx";
+import SingleSong from "../../components/SingleSong/SingleSong.jsx";
+import Button from "../../components/Button/Button"
 import "./AlbumPage.css";
 
 const AlbumPage = (props) => {
   const [album, setAlbum] = useState({});
+
   useEffect(() => {
     console.log(props.match)
+    
     fetchAlbum(props.match.params.id).then((res) => setAlbum(res));
   }, []);
+
   return (
     <div className="album__wrap">
       <div className="album__info">
@@ -33,7 +36,7 @@ const AlbumPage = (props) => {
       </div>
       <div className="album__tracks">
         {album?.tracks?.data.map((track) => (
-          <SingleAlbum
+          <SingleSong
             getSong={() => props.passSong({...track, cover: album.cover_medium})}
             title={track.title}
             artist={track.artist.name}

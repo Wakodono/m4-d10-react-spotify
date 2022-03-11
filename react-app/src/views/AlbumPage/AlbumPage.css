@@ -1,4 +1,4 @@
-.album__wrapper {
+.album__wrap {
   width: calc(100vw - 200px);
   height: calc(100vh - 100px);
 
@@ -10,20 +10,49 @@
     rgba(29, 29, 29, 1) 0%,
     rgba(3, 3, 3, 1) 100%
   );
+
   display: flex;
   flex-direction: row;
 }
 
 .album__info {
-    width: 40%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .album__tracks {
-    width: 60%;
+    width: 50%;
+    height: calc(100vh - 110px);
+    display: flex;
+    flex-direction: flex-start;
+    align-items: flex-end;
+    margin-right: 100px;
+    overflow-y: auto;
 }
 
 img {
     width: 300px;
     height: 300px;
     object-fit: cover;
+}
+
+h2, h3 {
+  width: fit-content;
+  color: white;
+}
+
+span {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg.artist__icon {
+  width: 30px;
+  height: 30px;
 }

@@ -1,9 +1,11 @@
 .single__wrap {
-    width: 60%;
+    width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin-top: 30px;
+    cursor: pointer;
 }
 
 .title-and-artist {
