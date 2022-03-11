@@ -4,6 +4,7 @@ import { HiOutlineHome } from "react-icons/hi";
 import { BsSearch } from "react-icons/bs";
 import { ImBooks } from "react-icons/im";
 import { Link } from "react-router-dom";
+
 const Sidebar = () => {
   return (
     <div className="sidebar__wrap">
