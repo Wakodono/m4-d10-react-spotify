@@ -6,7 +6,7 @@
   left: 200px;
   background: rgb(29, 29, 29);
   background: linear-gradient(
-    137deg,
+    55deg,
     rgba(29, 29, 29, 1) 0%,
     rgba(3, 3, 3, 1) 100%
   );
@@ -27,10 +27,11 @@
     width: 50%;
     height: calc(100vh - 110px);
     display: flex;
-    flex-direction: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-end;
-    margin-right: 100px;
-    overflow-y: auto;
+    /* margin-right: 100px; */
+    overflow-y: scroll;
 }
 
 img {
@@ -50,6 +51,10 @@ span {
 
 a {
   text-decoration: none;
+}
+
+div.duration {
+  margin-right: 50px;
 }
 
 svg.artist__icon {
