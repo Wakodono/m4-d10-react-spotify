@@ -1,9 +1,12 @@
-.home__wrapper {
-  width: calc(100vw - 200px);
-  height: calc(100vh - 100px);
-
+.home__wrap {
+  width: calc(100vw - 200px - 200px);
+  height: calc(100vh - 100px - 100px);
+  overflow-x: hidden;
   position: absolute;
   left: 200px;
+  padding: 100px;
+  padding-top: 0;
+
   background: rgb(36, 68, 106);
   background: linear-gradient(
     137deg,
@@ -13,15 +16,17 @@
 }
 
 .home__line {
-  width: 100%;
+  width: 90%;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
   padding: 30px;
 }
 
 h2 {
   margin-left: 20px;
   color: white;
-
+  font-size: 22pt;
 }

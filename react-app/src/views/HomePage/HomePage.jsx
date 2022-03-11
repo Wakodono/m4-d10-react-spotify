@@ -13,17 +13,18 @@ const HomePage = () => {
         fetchMusic("skepta").then((res) => setskepta(res) )
         fetchMusic("fireboy dml").then((res) => setfireboy(res) )
     }, [])
-    return <div className="home__wrapper">
+
+    return (<div className="home__wrap">
         <Header />
-            <h2>SKEPTA</h2>
+            <h2>UK 👑</h2>
         <div className="home__line">
             {skepta && skepta.slice(0,6).map((song) => <Link to={"album/" + song.album.id}><SingleAlbum src={song.album.cover_medium} key={song.id} /></Link>)}
         </div>
-            <h2>FIREBOY DML</h2>
+            <h2>AFRICA 🚀</h2>
         <div className="home__line">
             {fireboy && fireboy.slice(0,6).map((song) => <Link to={"album/" + song.album.id}><SingleAlbum src={song.album.cover_medium} key={song.id} /></Link>)}
         </div>
-    </div>
+    </div>)
 }
 
 export default HomePage
