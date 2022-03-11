@@ -1,6 +1,6 @@
 import './HomePage.css'
-import Header from '../../components/header/Header'
-import SingleAlbum from '../../components/SingleAlbum'
+import Header from '../../components/Header/Header'
+import SingleAlbum from '../../components/SingleAlbum/SingleAlbum'
 import { fetchMusic} from '../../apicalls'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'

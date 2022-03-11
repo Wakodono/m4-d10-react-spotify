@@ -1,8 +1,8 @@
 import React from 'react'
-import './SingleSong.css'
+import './SingleAlbum.css'
 import {CgMusicNote} from "react-icons/cg"
 
-export default function SingleSong({title, artist, duration}) {
+export default function SingleAlbum({title, artist, duration}) {
     return (
         <div className="single__wrapper">
            <div className="note-icon">{CgMusicNote}</div> 

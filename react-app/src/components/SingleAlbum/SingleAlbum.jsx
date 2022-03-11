@@ -2,7 +2,7 @@ import "./SingleAlbum.css";
 
 const SingleAlbum = (props) => {
     return (
-        <img src={props.src} alt="album cover" key={props.key} />
+        <img className="album" src={props.src} alt="album cover" key={props.key} />
     )
 }
 

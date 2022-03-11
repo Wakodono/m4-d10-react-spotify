@@ -5,7 +5,7 @@ import { BsThreeDots } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 import { fetchAlbum } from "../../apicalls";
-import SingleSong from "../../components/SingleSong/SingleSong";
+import SingleAlbum from "../../components/SingleAlbum/SingleAlbum.jsx";
 import "./AlbumPage.css";
 
 const AlbumPage = (props) => {
@@ -33,7 +33,7 @@ const AlbumPage = (props) => {
       </div>
       <div className="album__tracks">
         {album?.tracks?.data.map((track) => (
-          <SingleSong
+          <SingleAlbum
             getSong={() => props.passSong({...track, cover: album.cover_medium})}
             title={track.title}
             artist={track.artist.name}
