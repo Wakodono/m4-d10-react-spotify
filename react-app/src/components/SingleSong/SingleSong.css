@@ -1,4 +1,4 @@
-.single__wrapper {
+.single__wrap {
     width: 60%;
     height: fit-content;
     display: flex;
@@ -10,12 +10,14 @@
     display: flex;
     flex-direction: column;
     color: white;
+    text-align: left;
     width: 100%;
 }
 
 span:first-of-type {
     font-weight: bold;
 }
+
 .duration {
     color: white;
     display: flex;
