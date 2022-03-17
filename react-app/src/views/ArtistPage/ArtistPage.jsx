@@ -29,7 +29,7 @@ const ArtistPage = (props) => {
             <h2>Albums</h2>
             <div className="artist__line">
                 {
-                    artist?.album?.map((album) => (
+                    artist?.albums?.map((album) => (
                         <SingleAlbum src={album.cover_medium} key={album.id} />
                     ))
                 }
